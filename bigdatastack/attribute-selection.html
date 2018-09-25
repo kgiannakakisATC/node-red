@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('attribute-selection',{
+        category: 'BigDataStack',
+        color: '#e7e7ae',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "bigdatastack.png",
+        label: function() {
+            return this.name||"attribute-selection";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="attribute-selection">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-attributes"><i class="icon-tag"></i> Attributes</label>
+        <input type="text" id="node-input-attributes" placeholder="Attributes (Comma separated)">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="attribute-selection">
+    <p>A node for attribute-selection</p>
+</script>

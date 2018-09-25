@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('data-acquisition',{
+        category: 'BigDataStack',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "bigdatastack.png",
+        label: function() {
+            return this.name||"data-acquisition";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="data-acquisition">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-type"><i class="icon-tag"></i> Type</label>
+        <select id="node-input-type">
+            <option value="database">Database</option>
+            <option value="service">Service</option>
+            <option value="csv">CSV</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-source"><i class="icon-tag"></i> Source</label>
+        <input type="text" id="node-input-source" placeholder="Source">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="data-acquisition">
+    <p>A node for data-acquisition</p>
+</script>

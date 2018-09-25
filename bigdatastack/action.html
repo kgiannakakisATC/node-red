@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('action',{
+        category: 'BigDataStack',
+        color: '#ff7f0e',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "bigdatastack.png",
+        label: function() {
+            return this.name||"action";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="action">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="action">
+    <p>A node for action/p>
+</script>

@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('data-filtering',{
+        category: 'BigDataStack',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "bigdatastack.png",
+        label: function() {
+            return this.name||"data-filtering";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="data-filtering">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-filter"><i class="icon-tag"></i> Filter</label>
+        <input type="text" id="node-input-filter" placeholder="Filter">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="data-filtering">
+    <p>A node for data-filtering</p>
+</script>

@@ -1,0 +1,22 @@
+{
+  "name": "big-data-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red" : {
+    "nodes": {
+        "data-acquisition": "data-acquisition.js",
+        "data-filtering": "data-filtering.js",
+        "attribute-selection": "attribute-selection.js",
+        "monitoring": "monitoring.js",
+        "alert": "alert.js",
+        "pattern-recognition": "pattern-recognition.js",
+        "action": "action.js"
+    }
+  },
+  "author": "",
+  "license": "ISC"
+}
